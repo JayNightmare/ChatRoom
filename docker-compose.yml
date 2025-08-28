@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  server:
+    build: ./apps/server
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./apps/server:/app
+    environment:
+      - NODE_ENV=production
+  web:
+    command: pnpm --filter @chatroom/web dev
+    image: node:20-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server

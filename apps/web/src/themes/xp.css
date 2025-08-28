@@ -1,0 +1,9 @@
+html[data-theme='xp'] {
+    --bg: #3a6ea5;
+    --panel: #e0ecff;
+    --text: #1a1d21;
+    --accent: #4b85d1;
+    --border: #93b9e6;
+    --muted: #5d6e85;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,10 @@
+html[data-theme='retro'] {
+    --bg: #001b00;
+    --panel: #012d01;
+    --text: #36ff36;
+    --accent: #68ff68;
+    --border: #0a530a;
+    --muted: #2f5f2f;
+    --shadow: 0 0 0 2px #0a530a, 0 0 8px #36ff36;
+    --scanline-opacity: 0.25;
+}
